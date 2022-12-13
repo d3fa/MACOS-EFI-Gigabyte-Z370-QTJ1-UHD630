@@ -1,0 +1,9 @@
+.DS_Store
+*.dSYM
+._*
+.fseventsd
+.Spotlight*
+.TemporaryItems
+.Trashes
+System Volume Information
+$RECYCLE.BIN
