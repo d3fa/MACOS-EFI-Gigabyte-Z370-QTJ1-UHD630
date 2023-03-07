@@ -1,5 +1,29 @@
 OpenCore Changelog
 ==================
+#### v0.9.0
+- Resolved issues with verbose boot log appearing over picker graphics
+- Added version number to EnableGop UI section, so tool builders can track it
+- Added `ProvideCurrentCpuInfo` support for macOS 13.3 DP
+- Added AMD support, GOP offset auto-detection and macOS 10.11+ support to EnableGop vBIOS insertion script
+- Included precompiled EDK-II `EfiRom` and `GenFfs` in `Utilities/BaseTools` with OpenCore releases
+
+#### v0.8.9
+- Improved debug logging when applying ACPI patches
+- Fixed loading macOS with legacy boot without Apple Secure Boot
+- Added Linux support to legacy boot BootInstall script
+- Updated builtin firmware versions for SMBIOS and the rest
+- Fixed incomplete console mode initialisation when started in graphics mode
+- Provided additional UEFI forge mode, for use in firmware drivers
+- Implemented firmware driver enabling pre-OpenCore graphics on non-natively supported GPUs on EFI-era Macs
+- Prevented unwanted clear screen to console background colour when in graphics mode
+- Added `ResizeUsePciRbIo` quirk to workaround broken PciIo on some UEFI firmwares, thx @xCuri0
+- Fixed crash while using `SysReport` on older Atom systems
+- Fixed kexts without a Contents folder not being patched during a cacheless boot
+- Added read-only sections (`.rdata`) to all drivers for better memory protection when supported
+- Fixed crash while using `SysReport` on systems with non-audio HDA codecs
+- Fixed debug script support for GDB and LLDB
+- Fixed legacy boot debug builds asserting on macOS loading
+
 #### v0.8.8
 - Updated underlying EDK II package to edk2-stable202211
 - Updated AppleKeyboardLayouts.txt from macOS 13.1
