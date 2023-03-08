@@ -119,7 +119,7 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>BwCbPg==</data>
+				<data>CQClPg==</data>
 				<key>force-online</key>
 				<data>AQAAAA==</data>
 				<key>rps-control</key>
@@ -281,24 +281,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>PCIAudioDriver.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/PCIAudioDriver</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>IntelBluetoothFirmware.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -422,7 +404,7 @@
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
-			<string>x86_64</string>
+			<string>Auto</string>
 			<key>KernelCache</key>
 			<string>Auto</string>
 		</dict>
@@ -634,11 +616,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02946102GULNV91H</string>
+			<string>C02050108GUL00000</string>
 			<key>ProcessorType</key>
 			<integer>4105</integer>
 			<key>ROM</key>
-			<data>DE3ppuvF</data>
+			<data>NOL9AAAA</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -646,9 +628,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZP5Y4JV3Q</string>
+			<string>C02D00000V3Q</string>
 			<key>SystemUUID</key>
-			<string>9CF9B998-74BD-4161-9CE4-16F2802745A0</string>
+			<string>F1E5823F-0000-0000-0000-EF23F3546E0C</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -912,8 +894,6 @@
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
-			<key>ResizeUsePciRbIo</key>
-			<false/>
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
 			<key>TscSyncTimeout</key>
