@@ -1,5 +1,33 @@
 OpenCore Changelog
 ==================
+#### v0.9.2
+- Added `DisableIoMapperMapping` quirk, thx @CaseySJ
+- Fixed disabling single user mode when Apple Secure Boot is enabled
+- Improved guard checks for `GopBurstMode` on systems where it's not needed
+- Improved compatibility of `GopBurstMode` with some very non-standard GOP implementations
+- Fixed possible hang with `GopBurstMode` enabled on DEBUG builds
+- Enabled `GopBurstMode` even with natively supported cards, in EnableGop firmware driver
+- Fixed inability to patch force-injected kexts
+- Fixed `ExternalDiskIcons` quirk on macOS 13.3+, thx @fusion71au
+- Fixed various recent reversions and some longer-standing minor bugs in `Builtin` text renderer
+- Applied some additional minor optimizations to `Builtin` text renderer
+- Implemented `InitialMode` option to allow fine control over text renderer operating mode
+- Added support for `ConsoleMode` text resolution setting to `Builtin` renderer
+- Fixed regression for ACPI quirks `RebaseRegions` and `SyncTableIds`
+- Updated build process to provide stable and bleeding-edge versions of `EnableGop`
+- Implemented minor improvements in `PickerMode` `Apple`
+- Improved filtering algorithm for `LogModules` and added `?` filter for matching non-standard log lines
+- Fixed crash when gathering system report on virtualised CPUs
+- Fixed unnecessary warning when first booting with emulated NVRAM
+
+#### v0.9.1
+- Fixed long comment printing for ACPI patches, thx @corpnewt
+- Added sample config for VS Code source level debugging with `gdb`
+- Updated builtin firmware versions for SMBIOS and the rest
+- Added GOP memory caching report to `SysReport`
+- Implemented `GopBurstMode` quirk for faster GOP operation on older firmware
+- Fixed `ThirdPartyDrives` quirk on macOS 13.3 and above
+
 #### v0.9.0
 - Resolved issues with verbose boot log appearing over picker graphics
 - Added version number to EnableGop UI section, so tool builders can track it
