@@ -1,5 +1,5 @@
 My Working EFI partitin from Hackintosh - OpenCore Bootloader
-Working on MacOS Ventura
+Working on MacOS Sequoia
 
 Hardware:
 * CPU: QTJ1 aka Core i9 10980HK ES (Intel i7 9900k)
@@ -9,4 +9,4 @@ Hardware:
 * Bluetooth: USB Dongle CSR8510 A10
 * Network: Intel i219-V
 
-To generate valid Sn/MLB/etc run 'Macserial' from Utilities/macserial/ before you login in to your apple account
+To generate valid SN/MLB/etc run 'Macserial' from Utilities/macserial/ before you login in to your apple account
